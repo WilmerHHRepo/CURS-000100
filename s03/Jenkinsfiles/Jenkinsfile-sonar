@@ -16,7 +16,7 @@ pipeline {
             post{
                 success {
                     archiveArtifacts artifacts: 'target/*.jar', fingerprint: true, onlyIfSuccessful: true
-                    mail bcc: '', body: 'El pipeline fue exitoso', cc: '', from: '', replyTo: '', subject: 'Pipeline exitoso', to: 'josealdotrucios@gmail.com'
+//                    mail bcc: '', body: 'El pipeline fue exitoso', cc: '', from: '', replyTo: '', subject: 'Pipeline exitoso', to: 'josealdotrucios@gmail.com'
                 }
             }
         }
